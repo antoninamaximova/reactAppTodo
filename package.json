@@ -2,7 +2,7 @@
   "name": "toodoo",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://antoninamaximova.github.io/reactAppTodo",
+  "homepage": "https://antoninamaximova.github.io/reactAppTodo/",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.32",
     "@fortawesome/free-brands-svg-icons": "^5.15.1",

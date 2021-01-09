@@ -1,0 +1,26 @@
+.avatar {
+	border: 1px dotted blue;
+	border-radius: 5%;
+	width: 250px;
+	margin: 10px 20px;
+}
+
+.wrap {
+	display: flex;
+	margin: 0 0 30px;
+}
+
+.link {
+	margin: 5px;
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+}
+
+.repo {
+	margin-bottom: 10px;
+}
+
+.paragraph {
+	color: grey;
+}

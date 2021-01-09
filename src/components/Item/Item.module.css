@@ -1,0 +1,11 @@
+.item {
+	color: #000;
+}
+
+.done {
+	text-decoration: line-through;
+}
+
+.button {
+	display: inline;
+}

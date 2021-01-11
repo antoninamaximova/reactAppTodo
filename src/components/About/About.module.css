@@ -24,3 +24,8 @@
 .paragraph {
 	color: grey;
 }
+
+.subtitle {
+	display: flex;
+	justify-content: center;
+}

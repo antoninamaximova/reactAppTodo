@@ -10,7 +10,7 @@ class TextFieldItem extends React.Component {
   state = {
     inputValue: '', 
     items: [], 
-    inputLabel: 'Новая задача'
+    inputLabel: 'New Task'
   };
 
   onButtonClick = () => {
@@ -19,7 +19,7 @@ class TextFieldItem extends React.Component {
         });
     if(this.state.inputValue === '' || this.props.items.some((item) => this.state.inputValue.toLowerCase() === item.value.toLowerCase())) {
     this.setState ({
-          inputLabel: <span className={styles.span}>Введите новую задачу</span>
+          inputLabel: <span className={styles.span}>Add a new Task</span>
         });
     } else {
     this.props.OnClickAdd(this.state.inputValue)}
@@ -40,7 +40,7 @@ class TextFieldItem extends React.Component {
     <Button 
         color="secondary"
         onClick={this.onButtonClick}>
-        Добавить новую задачу
+        Add a new Task
       </Button>
   </Grid>);
   }

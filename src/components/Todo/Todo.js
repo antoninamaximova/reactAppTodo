@@ -13,13 +13,13 @@ const Todo = () => {
 	const state = {
 		items: [
 			{	
-				value: 'Добавить задание',
+				value: 'Add task',
 				isDone: false,
 				id: 1
 			}
 		],
 		count: 1,
-		label: 'Все'
+		label: 'All'
 	};
 
 	const [items, setItems] = useState(state.items);
@@ -35,9 +35,9 @@ const Todo = () => {
   const classes = useStyles(); 
 
 	const itemFilter = () => {
-    	if (label === 'Невыполненные') {
+    	if (label === 'Undone') {
       		return items.filter(item => !item.isDone);
-    	} if (label === 'Выполненные') {
+    	} if (label === 'Done') {
       		return items.filter(item => item.isDone);
     	}
     	return items;
@@ -78,7 +78,7 @@ const Todo = () => {
     	setLabel(name)
   	};
 
-	return (<div><h1 className={styles.title}>Задачи на сегодня</h1>
+	return (<div><h1 className={styles.title}>Today Tasks</h1>
 		<Paper className={classes.root}>
       <Tabs
         value = {value}
@@ -87,9 +87,9 @@ const Todo = () => {
         centered
         onChange={itemFilter}
       >
-        <Tab label='Все' onClick={() => onClickFilter('Все')}/>
-        <Tab label='Выполненные' onClick={() => onClickFilter('Выполненные')}/>
-        <Tab label='Невыполненные'onClick={() => onClickFilter('Невыполненные')}/>
+        <Tab label='All' onClick={() => onClickFilter('All')}/>
+        <Tab label='Done' onClick={() => onClickFilter('Done')}/>
+        <Tab label='Undone'onClick={() => onClickFilter('Undone')}/>
       </Tabs>
     </Paper>
 		<TextFieldItem  items = { items } OnClickAdd={OnClickAdd}/>

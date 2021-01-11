@@ -50,7 +50,7 @@ class About extends React.Component {
 					{ isLoading ? <CircularProgress /> : <div>
 						{isError ? <div>{Texting}</div> : <div>
 						<Card className={styles.wrap}>
-							<img src={ user.avatar_url} className={styles.avatar} alt='Аватар'></img>
+							<img src={ user.avatar_url} className={styles.avatar} alt='avatar'></img>
 							<div>
 								<h1 className={styles.list}>{user.name}</h1>
 								<p className={styles.paragraph}>{user.bio}</p>
@@ -63,9 +63,12 @@ class About extends React.Component {
 								<a href='https://www.instagram.com/antoninamaximova/' className={styles.link}>
 									<FontAwesomeIcon icon={['fab', 'instagram']} size="2x"/>
 								</a>
+								<a href='https://t.me/amaxteam' className={styles.link}>
+									<FontAwesomeIcon icon={['fab', 'telegram']} size="2x"/>
+								</a>
 							</div>
 						</Card>
-					 <Card><h2>Репозитории на github.com:</h2>
+					 <Card><h2 className={styles.subtitle}>Repositories on github.com:</h2>
 					 <div>
 					 	{!isLoading && <div><ol>
 							{repoList.map(repo => 

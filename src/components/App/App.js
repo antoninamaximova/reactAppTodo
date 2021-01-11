@@ -10,8 +10,8 @@ const App = () => {
 	return (<Router className={styles.color}>
 				<div className={styles.wrap}>
 					<MenuList className={styles.menu}>
-			          <Link to ='/reactAppTodo' className={styles.link}><MenuItem className={styles.menuItem} >Обо мне</MenuItem></Link>
-			          <Link to ='/todo'className={styles.link}><MenuItem className={styles.menuItem} >Задачи</MenuItem></Link>
+			          <Link to ='/reactAppTodo' className={styles.link}><MenuItem className={styles.menuItem} >About</MenuItem></Link>
+			          <Link to ='/todo'className={styles.link}><MenuItem className={styles.menuItem} >Task List</MenuItem></Link>
 			        </MenuList>
 					<div className={styles.inner}>
 						<Route path ='/reactAppTodo' component={About}/>
